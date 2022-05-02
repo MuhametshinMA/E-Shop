@@ -7,5 +7,7 @@
     <string name="logo_app_1">Courses</string>
     <string name="logo_app_2">App</string>
     <string name="category_games">Games</string>
+    <string name="course_start_date">Start date</string>
+    <string name="course_level">Level</string>
 
 </resources>
