@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EShop</string>
+    <string name="sales_icon">Sales</string>
+    <string name="contacts_text">Contacts</string>
+    <string name="about_text">About as</string>
+    <string name="main_text">Main</string>
+    <string name="logo_app_1">Courses</string>
+    <string name="logo_app_2">App</string>
+    <string name="category_games">Games</string>
+
+</resources>
