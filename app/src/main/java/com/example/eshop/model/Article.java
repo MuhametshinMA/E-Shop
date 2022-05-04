@@ -1,21 +1,24 @@
 package com.example.eshop.model;
 
 public class Article {
-    int id;
+    int id, category;
     String img;
     String title;
     String date;
     String level;
     String color;
+    String description;
 
-    public Article(int id, String img, String title, String date,
-                   String level, String color) {
+    public Article(int id, int category, String img, String title, String date,
+                   String level, String color, String description) {
         this.id = id;
+        this.category = category;
         this.img = img;
         this.title = title;
         this.date = date;
         this.level = level;
         this.color = color;
+        this.description = description;
     }
 
     public int getId() {
@@ -24,6 +27,14 @@ public class Article {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getCategory() {
+        return category;
+    }
+
+    public void setCategory(int category) {
+        this.category = category;
     }
 
     public String getImg() {
@@ -64,5 +75,13 @@ public class Article {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

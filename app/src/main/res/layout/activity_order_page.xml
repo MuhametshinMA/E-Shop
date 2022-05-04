@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mainBgColor"
-    tools:context=".MainActivity">
+    tools:context=".OrderPage">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -22,7 +22,7 @@
             android:id="@+id/mainTextView"
             android:layout_width="95dp"
             android:layout_height="145dp"
-            android:fontFamily="@font/montserrat_alternates_bold"
+            android:fontFamily="@font/montserrat_alternates"
             android:gravity="center"
             android:rotation="270"
             android:text="@string/main_text"
@@ -99,48 +99,18 @@
         app:layout_constraintStart_toEndOf="@+id/logoApp1TextView"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/filterImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/sales_icon"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@+id/logoApp1TextView"
-        app:srcCompat="@drawable/ic_filter" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/categoryRecycler"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/filterImageView"
-        app:layout_constraintStart_toEndOf="@+id/filterImageView"
-        app:layout_constraintTop_toTopOf="@+id/filterImageView"
-        tools:listitem="@layout/category_item" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/articleRecycler"
+    <ListView
+        android:id="@+id/orderListView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@+id/categoryRecycler" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/app_name"
-        android:onClick="openShoppingCart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/constraintLayout"
-        app:srcCompat="@drawable/ic_shop" />
+        app:layout_constraintTop_toBottomOf="@+id/logoApp1TextView" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
